@@ -1,0 +1,78 @@
+@import 'theme/variables';
+@import 'theme/mixins';
+
+.outer_wrapper {
+	background-color: #731C3F;
+	width: 100%;
+	min-height: 100vh;
+	padding:10px 15px;
+	@include flex-direction(row);
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(space-around);
+	h1 {
+		color: #FFF
+	}
+}
+
+.Wrapper {
+	background-color: #731C3F;
+	width: 100%;
+	min-height: 100vh;
+	padding:10px 15px;
+	h1 {
+		color: #FFF
+	}
+}
+
+.innerWrapper {
+	min-height: 80vh;
+	min-width: 40vw;
+	padding:20px 25px; 
+	@include align-items(center);
+  	@include justify-content(center);
+	border-width: 2px;
+	border-radius: 50px;
+	border-color: #fff;
+	border-style: solid;
+	h2 {
+		color: white;
+	}
+}
+
+.bg {
+	background-color: #FFFFFF;
+	h1 {
+		color: black;
+	}
+}
+.secondaryWrapper{
+	background:$secondaryInput;
+	font-size:$font-lmd;
+	line-height: 20px;
+	min-height: 100vh;
+	h2, h3, h4, h5, h6{
+		color: $navy;
+	}
+	h4, h5{
+		font-family: $nunito-bold;
+	}
+	h4{
+		font-size: $font-xmd;
+		line-height: calc(#{$font-xmd} + 6px)
+	}
+	h5{
+		font-size: $font-xmd;
+		line-height: 30px;
+	}
+	&.open{
+		position: fixed;
+    	width: 100%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.outer_wrapper {
+		background-color:$white;
+		padding:0
+	}
+}

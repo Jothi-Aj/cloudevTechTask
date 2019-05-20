@@ -1,0 +1,52 @@
+@import 'theme/variables';
+@import 'theme/mixins';
+
+.container {
+  background: #731C3F;
+  @include display-flex;
+}
+
+.wrapper {
+  @include display-flex;
+  min-height: 80vh;
+  @include justify-content(space-around);
+  @include flex-direction(column)
+;}
+
+.firstColumn {
+  background-color: #ffffff;
+  min-height: 20vh;
+  border-width: 2px;
+  border-radius: 10px;
+  padding-left: 10 solid;
+  border-color: white;
+  border-style: solid;
+  @include justify-content(space-between);
+  @include align-items(center);
+  h3 {
+    text-align: center;
+    color: black
+  }
+}
+
+.secondColumn {
+  background-color: transparent;
+  min-height: 20vh;
+  @include justify-content(center);
+  @include align-items(center);
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #fff;
+  border-style: solid;
+    h3 {
+    text-align: center;
+      color: #fff;
+    }
+}
+
+.chartContainer {
+  width: 100%;
+  Height: 100%;
+  @include justify-content(center);
+  @include align-items(center);
+}

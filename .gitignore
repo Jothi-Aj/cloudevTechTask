@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+.sass-cache
+*.map
+.idea
+*.log
+dist/
+__node_modules
+*.txt
+coverage/
+docker
+compose
+appspec.yml
+scripts
